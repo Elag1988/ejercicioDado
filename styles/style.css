@@ -1,0 +1,167 @@
+@import url(/assets/fonts/Cousine-Regular.ttf); /* importamos la fuente Cousine */
+body{
+	margin: 0; /* con margin le creamos espacio entre contenedores o elementos */
+	padding: 0; /* con padding le creamos espacio dentro del elemento o contenedor */
+	font-family: 'Cousine', monospace; /* font-family sirve para definir que tipo de letra queremos usar */
+	background: #7b7b7b; /* background nos define en este caso el color del fondo de la pagina web */
+	color: #fff; /* color nos define el color del texto */
+}
+header {
+	padding: 20px;/* con padding le creamos espacio dentro del elemento o contenedor, en este caso 20px en todas las direcciones */
+}
+h1{
+	text-align: center; /* text-align nos indica que el texto se centrara en el contenedor h1 */
+	font-weight: 700; /* define que tanto grosor queremos que la letra tenga, en este caso queremos que la letra sea gruesa, un simil a negrita de word */
+	text-transform: uppercase; /* text-transform nos indica que el texto se convertira a mayusculas */
+}
+p{
+	text-align: center; /* text-align nos indica que el texto se centrara en el contenedor p */
+	font-weight: 300; /* define que tanto grosor queremos que la letra tenga, en este caso queremos que la letra no sea tenga tanto grosor  */
+}
+a {
+	color: rgb(253, 242, 92);
+}
+section {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos */
+	justify-content: center; /* Los elementos se alinean con respecto al eje principal(en este caso, row), y en este caso al centro de contenedor padre  */
+	flex-wrap: wrap; /* Con esta propiedad los elementos hijos no se quedaran en una sola linea sino que pasaran a una segunda linea si es necesario. */
+}
+[class^="cara-"]{
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos */
+	margin: 1em; /* con margin le creamos espacio entre contenedores o elementos, en este caso de 16px */
+	width: 150px; /* con width definimos que tan ancho queremos que sea el contenedor */
+	height: 150px; /* con height definimos que tan alto queremos que sea el contenedor */
+	padding: 15px; /* con padding le creamos espacio dentro del elemento o contenedor, en este caso de 15px en todas las direcciones */
+	background: #a73808; /* background nos define en este caso el color del fondo del dado */
+	border-radius: 10%; /* con border radius definimos que tan circulares queremos los bordes */
+}
+.cara-uno{
+	justify-content:center;  /* El elemento 1 se alinea con respecto al eje principal(en este caso, row), y en este caso al centro de contenedor padre  */
+	align-items:center; /* El elemento 1 se alinea con respecto al eje secundario(en este caso, column), y en este caso al centro de contenedor padre  */
+}
+.cara-dos{
+	justify-content:space-between; /* Los 2 elementos se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+.cara-dos .punto:nth-child(2){
+	align-self: flex-end; /* El punto 2 se alinea con respecto al eje secundario(en este caso, column), y en este caso a la derecha abajo del contenedor padre   */
+}
+.cara-tres{
+	justify-content: space-between;  /* Los 3 elementos se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso el tercer elemento queda en el centro de la linea. */
+}
+.cara-tres .punto:nth-child(2){
+	align-self: center; /* El punto 2 se alinea con respecto al eje secundario(en este caso, column), y en este caso al centro de su columna del contenedor padre*/
+}
+.cara-tres .punto:nth-child(3){
+	align-self: flex-end; /* El punto 3 se alinea con respecto al eje secundario(en este caso, column), y en este caso a la derecha abajo del contenedor padre   */
+}
+.cara-cuatro{
+	justify-content: space-between;  /* Los 2 elementos(columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+.cara-cuatro .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos puntos) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 2 elementos(punto(2 por cada columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+.cara-cinco{
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns y punto medio) */
+	justify-content: space-between; /* Los 3 elementos(2 columns y punto medio) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso el elemento punto medio queda en el centro del contenedor padre. */
+}
+.cara-cinco .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos puntos) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 2 elementos(punto(2 por cada columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+.cara-cinco .medio{
+	align-self:center; /* El punto se alinea con respecto al eje secundario(en este caso, column), y en este caso al centro del contenedor padre   */
+}
+.cara-seis{
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 2 elementos(2 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+.cara-seis .columna{
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos puntos) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 3 elementos(3 puntos de cada columna) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-siete{
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns y punto medio) */
+	justify-content: space-between; /* Los 3 elementos(2 columns y punto medio) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso el elemento punto medio queda en el centro del contenedor padre. */
+}
+.cara-siete .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos puntos) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 3 elementos punto(3 por cada columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-siete .medio {
+	align-self: center; /* El punto se alinea con respecto al eje secundario(en este caso, column), y en este caso al centro del contenedor padre */
+}
+
+.cara-ocho {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 3 elementos(3 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso la segunda columna queda en el centro del contenedor padre. */
+}
+
+.cara-ocho .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 3 elementos punto(3 en las columnas de los extremos y 2 en la segunda columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-nueve {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 3 elementos(3 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso la segunda columna queda en el centro del contenedor padre. */
+
+}
+
+.cara-nueve .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los 3 elementos punto(3 en las columnas)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-diez {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 3 elementos(3 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso la segunda columna queda en el centro del contenedor padre. */
+
+}
+
+.cara-diez .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los elementos punto(4 en las columnas de los extremos y 2 en la segunda columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-once {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 3 elementos(3 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso la segunda columna queda en el centro del contenedor padre. */
+
+}
+
+.cara-once .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los elementos punto(4 en las columnas de los extremos y 3 en la segunda columna)) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+.cara-doce {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	justify-content: space-between; /* Los 3 elementos(3 columns) se alinean con respecto al eje principal(en este caso, row), y en este caso le damos un espacio igual entre los bordes de la linea, por eso la segunda columna queda en el centro del contenedor padre. */
+
+}
+
+.cara-doce .columna {
+	display: flex; /* display:flex sirve para convertir el elemento en un bloque y asi poder modificar a sus elementos hijos(en este caso los elementos columns) */
+	flex-direction: column; /* Esta propiedad nos sirve para que los elementos punto se organizen en columnas. */
+	justify-content: space-between; /* Los elementos punto(4 en cada columna) se alinean con respecto al eje principal(en este caso, column), y en este caso le damos un espacio igual entre los bordes de la linea. */
+}
+
+
+.punto {
+	width: 20px; /* con width definimos que tan ancho queremos que sea el contenedor */
+	height: 20px; /* con height definimos que tan alto queremos que sea el contenedor */
+	border-radius: 50%; /* con border radius definimos que tan circulares queremos los bordes */
+	background: rgb(217, 217, 217); /* background nos define en este caso el color del fondo de los puntos */
+	box-shadow: inset 0 3px rgb(217, 217, 217), inset 0 -3px rgb(217, 217, 217); /* box shadow le da una sombra a los elementos */
+}

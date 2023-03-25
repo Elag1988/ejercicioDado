@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Dado con Flexbox</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Un dado hecho apartir de Flexbox, css puro, no sass">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header>
+	<h1>Dado de 12 lados hecho en Flexbox</h1>
+	<p>Basado en el <a href="https://github.com/phrnndz/dado-flexbox">repositorio</a> de Pamela Hernández.</p>
+	<p>Este ejercicio es una práctica para aprender las propiedades básicas del layout Flexbox</p>
+	</header>
+	<section> <!--contenedor padre -->
+		<div class="cara-uno"> <!--se crea el contenedor del primer dado--->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+		</div>
+
+		<div class="cara-dos"> <!--se crea el contenedor del segundo dado--->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+		</div>
+		<div class="cara-tres"> <!--se crea el contenedor del tercer dado--->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+		</div>
+		<div class="cara-cuatro"> <!--se crea el contenedor del cuarto dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-cinco"> <!--se crea el contenedor del quinto dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<span class="punto medio"></span> <!--Este elemento crea los puntos del dado, y la clase medio se usa para poder posicionar el elemento en el centro del dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-seis"> <!--se crea el contenedor del sexto dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-siete"> <!--se crea el contenedor del septimo dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+				<span class="punto medio"></span> <!--Este elemento crea los puntos del dado, y la clase medio se usa para poder posicionar el elemento en el centro del dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-ocho"> <!--se crea el contenedor del octavo dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-nueve"> <!--se crea el contenedor del noveno dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+
+		<div class="cara-diez"> <!--se crea el contenedor del decimo dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-once"> <!--se crea el contenedor del onceavo dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+		<div class="cara-doce"> <!--se crea el contenedor del doceavo dado--->
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+			<div class="columna"> <!--con esta clase se crea una columna para poder ubicar los elementos de una manera mas practica-->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+				<span class="punto"></span> <!--Este elemento crea los puntos del dado --->
+			</div>
+		</div>
+	</section>
+</body>
+</html>
